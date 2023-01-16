@@ -10,9 +10,11 @@ afterEach(() => {
 })
 
 describe('ControlsContainer', () => { 
-    const createNoteMock = vi.fn()
+    const props = {
+        _createNote: vi.fn()
+    }
     beforeEach(() => {
-        render(<ControlsContainer _createNote={createNoteMock} />)
+        render(<ControlsContainer {...props} />)
     })
 
     it('should display button component when rendered', () => { 
@@ -46,8 +48,8 @@ describe('ControlsContainer', () => {
         await userEvent.type(inputHeight, '200')
         userEvent.click(createNoteButton)
 
-        expect(createNoteMock).toHaveBeenCalled()
-        expect(createNoteMock).toHaveBeenCalledTimes(1)
-        expect(createNoteMock).toHaveBeenCalledWith(expectedCallData)
+        expect(props._createNote).toHaveBeenCalled()
+        expect(props._createNote).toHaveBeenCalledTimes(1)
+        expect(props._createNote).toHaveBeenCalledWith(expectedCallData)
      })
  })

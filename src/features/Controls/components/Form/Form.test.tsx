@@ -10,8 +10,11 @@ afterEach(() => {
 })
 
 describe('Form', () => { 
+    const props = {
+        handleCreate: vi.fn()
+    }
     beforeEach(() => {
-        render(<Form handleCreate={() => vi.fn()} />)
+        render(<Form {...props} />)
     })
 
     it('should display input text when typed in', async () => { 
@@ -38,5 +41,9 @@ describe('Form', () => {
         await userEvent.type(inputWidth, '200')
         await userEvent.type(inputHeight, '200')
         userEvent.click(createNoteButton)
+
+        expect(props.handleCreate).toHaveBeenCalled()
+        expect(props.handleCreate).toHaveBeenCalledTimes(1)
+        expect(props.handleCreate).toHaveBeenCalledWith(expectedCallData)
      }) 
  })
