@@ -18,3 +18,22 @@ body {
 .fade {
   opacity: 0.5;
 }
+
+.desktop {
+  display: none;
+}
+
+.not-desktop {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .desktop {
+    display: block;
+  }
+
+  .not-desktop {
+    display: none;
+  }
+}
