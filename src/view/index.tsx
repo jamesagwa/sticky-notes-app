@@ -3,7 +3,9 @@ import { Controls } from '../features/Controls'
 import { Note } from '../features/Note'
 import { INoteProps } from '../features/shared/interface'
 import { Trash } from '../features/Trash'
-import { container, controlTrashBar } from './index.module.css'
+import styles from './index.module.css'
+
+const { container, controlTrashBar } = styles
 
 export default function AppShell() {
     const [notes, setNotes] = useState<INoteProps[]>([])

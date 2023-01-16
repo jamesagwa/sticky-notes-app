@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { NOTE_POSITIONS } from '../../../shared/constants'
 import { INoteProps } from '../../../shared/interface'
-import { container } from './NoteUI.module.css'
+import styles from './NoteUI.module.css'
+
+const { container } = styles
 
 export function NoteUI ({ position = "Center", width = '200px', height = '200px', id, onMouseUp }: INoteProps) {
     const [isDraggable, setIsDraggable] = useState(false)

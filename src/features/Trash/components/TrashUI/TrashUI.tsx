@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { ITrashProps } from '../../../shared/interface'
-import { trash } from './TrashUI.module.css'
+import styles from './TrashUI.module.css'
 
+const { trash } = styles
 
 export function TrashUI({ onTrashZone }: ITrashProps) {
     const trashRef = useRef<HTMLDivElement>(null)
