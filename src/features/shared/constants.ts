@@ -12,7 +12,6 @@ export const NOTE_POSITIONS:Positions = {
     'Top': {
         top: '0',
         left: '50%',
-        // transform: 'translateX(-50%)'
     },
     'Top right': {
         top: '0',
@@ -41,7 +40,6 @@ export const NOTE_POSITIONS:Positions = {
     'Center': {
         top: '50%',
         left: '50%',
-        transform: 'translate(-50%, -50%)'
     }
 }
 
