@@ -10,9 +10,9 @@ export const NOTE_POSITIONS:Positions = {
         left: '0',
     },
     'Top': {
-        top: '15%',
+        top: '0',
         left: '50%',
-        transform: 'translate(-50%, -50%)'
+        // transform: 'translateX(-50%)'
     },
     'Top right': {
         top: '0',
@@ -20,17 +20,15 @@ export const NOTE_POSITIONS:Positions = {
     },
     'Right': {
         top: '50%',
-        right: '-7%',
-        transform: 'translate(-50%, -50%)'
+        right: '0',
     },
     'Bottom right':  {
         bottom: '0',
         right: '0',
     },
     'Bottom': {
-        bottom: '-15%',
+        bottom: '0',
         left: '50%',
-        transform: 'translate(-50%, -50%)'
     },
     'Bottom left': {
         bottom: '0',
@@ -38,8 +36,7 @@ export const NOTE_POSITIONS:Positions = {
     },
     'Left': {
         top: '50%',
-        left: '8%',
-        transform: 'translate(-50%, -50%)'
+        left: '0',
     },
     'Center': {
         top: '50%',
