@@ -1,0 +1,1 @@
+export { TrashUI } from './TrashUI'

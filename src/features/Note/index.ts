@@ -1,0 +1,1 @@
+export { NoteContainer as Note } from "./components/NoteContainer"
